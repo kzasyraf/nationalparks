@@ -69,9 +69,9 @@ public class Parks {
     @RequestMapping(method = RequestMethod.GET, value = "/centered", produces = "application/json")
     public List<Park> findParksCentered(@RequestParam("lat") float lat, @RequestParam("lon") float lon, @RequestParam("maxDistance") int maxDistance, @RequestParam("minDistance") int minDistance) {
 
-
+        System.out.println("[DEBUG] getAllParks");
         // TODO: Implement this
-        return null;
+        return con.getAll();
     }
 
 }
