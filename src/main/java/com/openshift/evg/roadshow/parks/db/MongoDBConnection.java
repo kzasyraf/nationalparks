@@ -297,23 +297,23 @@ public class MongoDBConnection {
     }
     
     
-//    public static void splitUsingRegex(String url) {
-//        System.out.println("Split URL example using regex");
-//        System.out.println();
-//        Pattern pattern = Pattern.compile("mongodb?://([^:^/]*):?(\\d*)?/?(.*)?");
-//        Matcher matcher = pattern.matcher(url);
-//        matcher.find();
-//        
-//        String domain = matcher.group(1);
-//        String port = matcher.group(2);
-//        String uri = matcher.group(3);
-//        System.out.println(url);
-//        System.out.println("domain: " + (domain != null ? domain : ""));
-//        System.out.println("port: " + (port != null ? port : ""));
-//        System.out.println("uri: " + (uri != null ? uri : ""));
-//        System.out.println();
-//    }
-//    
+    public static void splitUsingRegex(String url) {
+        System.out.println("Split URL example using regex");
+        System.out.println();
+        Pattern pattern = Pattern.compile("mongodb?://([^:^/]*):?(\\d*)?/?(.*)?");
+        Matcher matcher = pattern.matcher(url);
+        matcher.find();
+        
+        String domain = matcher.group(1);
+        String port = matcher.group(2);
+        String uri = matcher.group(3);
+        System.out.println(url);
+        System.out.println("domain: " + (domain != null ? domain : ""));
+        System.out.println("port: " + (port != null ? port : ""));
+        System.out.println("uri: " + (uri != null ? uri : ""));
+        System.out.println();
+    }
+    
 //    public static void main(String[] args) {
 //		MongoDBConnection.splitUsingRegex("mongodb://172.30.253.157:27017");
 //		MongoDBConnection.splitUsingRegex("mongodb://172.30.253.157:27017/exampledb");
