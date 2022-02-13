@@ -21,7 +21,7 @@ oc new-app https://github.com/openshift-roadshow/nationalparks.git
 === Deploy via Template
 ----
 oc create -f ./ose3/application-template.json
-oc new-app nationalparks
+oc new-app nationalparks 
 ----
 
 There's some options that can be parameterized:
